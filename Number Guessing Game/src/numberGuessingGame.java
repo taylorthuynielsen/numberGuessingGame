@@ -40,7 +40,7 @@ public class numberGuessingGame
 	
 				
 				
-				while (isWrong)
+				do 
 					{
 									
 							System.out.println("Pick a number between 1 and " + randomNumberMultiplier + ".");
@@ -96,12 +96,14 @@ public class numberGuessingGame
 										System.out.println("It took you " + counter + " guesses to guess the secret number. You were fast.");
 										
 										}
+									
 												
 								}
 				
 					}
-			
+			while(isWrong);
 
 			}
 
 	}
+
